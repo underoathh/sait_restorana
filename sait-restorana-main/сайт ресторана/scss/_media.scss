@@ -1,0 +1,163 @@
+@media screen and (max-width: 1023.98px) {
+	.explore-menu{
+		&__image{
+			display: none;	
+		}
+		&__block-text{
+		}
+	}
+	.about{
+		&__container{
+			flex-direction: column-reverse;
+		}
+		&__media{
+			max-width: 65%;
+			margin: 0 auto;
+		}
+		&__content{
+			flex: 0 1 auto;
+		}
+		&__title-h2{
+			margin-top: 20px;
+		}
+		&__block-text > .block-text__button-link {
+			margin-bottom: 20px;
+		}
+	}
+
+	.image{
+		&__play{
+			right: 6%;
+		}
+	}
+
+	.features{
+		&__items{
+			flex-direction: column;
+			gap: 10px;
+		}
+	}
+
+	.recipes {
+		&__items{
+			flex-direction: column;
+		}
+	}
+
+	.app {
+		margin-top: 60px;
+		&__container{
+			flex-direction: column-reverse;
+		}
+		&__image {
+			max-width: 50%;
+			margin: 0 auto;
+		}
+		&__content {
+			flex: 0 1 auto;
+		}
+		&__title-h2{
+			margin-top: 30px;
+		}
+	}
+
+	.block-text{
+		&__app-link{
+			margin-bottom: 20px;
+		}
+	}
+
+	.feedback{
+		&__container{
+			flex-direction: column;
+			gap: 50px;
+		}
+		&__image{
+			max-width: 60%;
+			margin: 0 auto;
+			padding-top: 15px;
+		}
+	}
+
+	.absolute__image-3{
+		display: none;
+	}
+	.absolute__image-2{
+		display: none;
+	}
+	.absolute__image-1{
+		display: none;
+	}
+	.absolute__image-8{
+		display: none;
+	}
+	.absolute__image-7{
+		display: none;
+	}
+	.absolute__image-4{
+		display: none;
+	}
+	.absolute__image-6{
+		top: -48%;
+	}
+}
+
+@media screen and (max-width:767.98px) {
+	.absolute__image-6{
+		display: none;
+	}
+	.absolute__image-5{
+		display: none;
+	}
+	.explore-menu{
+		&__container{
+			text-align: center;
+		}
+	}
+
+	.block-text{
+		&__link{
+			justify-content: center;
+		}
+	}
+
+	.about{
+		&__container{
+			text-align: center;
+		}
+	}
+	.app{
+		&__container{
+			text-align: center;
+		}
+	}
+	.feedback{
+		&__container{
+			text-align: center;
+		}
+	}
+	.footer{
+		&__content {
+			flex-direction: column;
+			justify-content: center;
+			gap: 40px;
+		}
+	}
+}
+
+@media screen and (max-width: 374.98px) {
+    br {
+        display: none;
+    }
+
+	.footer{
+		&__menu{
+			flex: 0 1 50%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+		}
+	}
+}
+    

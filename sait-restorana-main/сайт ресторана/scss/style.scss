@@ -1,0 +1,738 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+@import 'mixins';
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    &__container {
+        display: flex;
+        min-height: 120px;
+        align-items: center;
+        @include adaptive-value('min-height', 120, 80, 0);
+    }
+    &__logo {
+    }
+    &__menu {
+        flex: 1 1 auto;
+    }
+}
+
+.logo {
+    &__img {
+        width: 110px;
+        height: 30px;
+        @include adaptive-value('width', 110, 95, 0);
+        @include adaptive-value('height', 30, 25, 0);
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    &__list {
+        display: flex;
+        gap: 62px;
+        @include adaptive-value('gap', 62, 20, 0);
+    }
+    &__item {
+    }
+    &__link {
+    }
+    &__link-search {
+        width: 24px;
+        @include adaptive-value('width', 24, 18, 0);
+    }
+    &__link-cart {
+        width: 22px;
+        @include adaptive-value('width', 22, 16, 0);
+    }
+    &__link-menu {
+        width: 20px;
+        height: 17px;
+        @include adaptive-value('width', 20, 14, 0);
+        @include adaptive-value('height', 17, 14, 0);
+    }
+}
+
+.main {
+}
+
+.explore-menu {
+    padding: 148px 0 25px 0;
+    @include adaptive-value('padding-top', 148, 90, 0);
+    @include adaptive-value('padding-bottom', 25, 15, 0);
+    &__container {
+        position: relative;
+    }
+    &__title-h2{
+        margin: 0 0 16px 0;
+        @include adaptive-value('margin-bottom', 16, 12, 0);
+    }
+    &__content {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    &__block-text {
+    }
+    &__image {
+    }
+    &__image img {
+        width: 73%;
+        height: 625px;
+        position: absolute; 
+        top: 0px;
+        right: 0px;
+        //display: none;
+        @include adaptive-value('height', 625, 284, 0);
+    }
+}
+
+.block-text {
+    &__title-h2 {
+        font-family: Gilroy_semibold;
+        font-size: 24px;
+        color: #FF9401;
+        line-height: 30px;
+        @include adaptive-value('font-size', 24, 12, 0);
+        @include adaptive-value('line-height', 30, 15, 0);
+    }
+    &__title-h1 p{
+        font-family: Gilroy_extrabold;
+        font-size: 96px;
+        display: inline-block;
+        font-weight: 800;
+        color: #232323;
+        line-height: 108px; 
+        @include adaptive-value('line-height', 108, 50, 0);
+        @include adaptive-value('font-size', 96, 70, 0);
+    }
+    &__center{
+        text-align: center;
+    }
+    &__title-img-food {
+        display: inline-flex;
+        height: 62px;
+        @include adaptive-value('height', 62, 45, 0);
+    }
+    &__title-img-mood {
+        display: inline-flex;
+        height: 52px;
+        @include adaptive-value('height', 52, 40, 0);
+    }
+    &__text {
+        font-size: 20px;
+        margin-top: 33px;
+        @include adaptive-value('font-size', 20, 14, 0);
+        @include adaptive-value('margin-top', 33, 15, 0);
+    }
+    &__text {
+        margin-bottom: 44px;
+        @include adaptive-value('margin-bottom', 44, 20, 0);
+    }
+    &__image{
+        //width: 73%;
+        height: 100px;
+        display: none;
+        @include adaptive-value('height', 100, 50, 0);
+    }
+    &__link {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 131px;
+        @include adaptive-value('margin-bottom', 131, 30, 0);
+        @include adaptive-value('gap', 30, 15, 0);
+    }
+    &__link{
+    }
+    &__button-link{
+    }
+}
+
+.link-block-text {
+}
+.icon-Facebook{
+    color: #2E2E2E;
+    width: 9px;
+    height: 16px;
+}
+.icon-Instagram{
+    color: #2E2E2E;
+    width: 16px;
+    height: 15px;
+}
+.icon-Twitter{
+    color: #2E2E2E;
+    width: 19px;
+    height: 16px;
+}
+.icon-Facebook:hover{
+    color: #f70a0a;
+    transition: color 0.3s ease 0s;
+}
+.icon-Instagram:hover{
+    color: #f70a0a;
+    transition: color 0.3s ease 0s;
+}
+.icon-Twitter:hover{
+    color: #f70a0a;
+    transition: color 0.3s ease 0s;
+}
+
+.button {
+    display: inline-block;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding: 16px 32px;
+    border-radius: 31px;
+    background-color: #FF9401;
+    border: none;
+    transition: background-color 0.3s ease 0s;
+    cursor: pointer;
+    margin-bottom: 60px;
+    @include adaptive-value('margin-bottom', 60, 25, 0);
+    @include adaptive-value('padding-top', 16, 10, 0);
+    @include adaptive-value('padding-bottom', 16, 10, 0);
+    @include adaptive-value('padding-right', 32, 25, 0);
+    @include adaptive-value('padding-left', 32, 25, 0);
+}
+
+.button:hover {
+    background-color: #da8002;
+}
+
+.about {
+    background: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0) 100%);
+    &__container {
+        display: flex;
+    }
+    &__title-h2{
+        margin-bottom: 24px;
+        @include adaptive-value('margin-bottom', 24, 15, 0);
+    }
+    &__title-h3{
+        font-family: Gilroy;
+        font-size: 52px;
+        line-height: 60px;
+        color: #2E2E2E;
+        @include adaptive-value('font-size', 50, 25, 0);
+        @include adaptive-value('line-height', 60, 30, 0);
+    }
+    &__media {
+        flex: 0 1 50%;
+        position: relative;
+    }
+    &__image {
+    }
+    &__content {
+        flex: 0 1 50%;
+    }
+    &__block-text{
+        padding-left: 15px;
+    }
+    &__block-text > .block-text__title-h2 {
+        margin-top: 142px;
+        margin-bottom: 24px;
+        @include adaptive-value('margin-top', 142, 30, 0);
+        @include adaptive-value('margin-bottom', 24, 8, 0);
+    }
+    &__block-text > .block-text__title-h3 {
+        margin-bottom: 21px;
+        @include adaptive-value('margin-bottom', 21, 7, 0);
+    }
+    &__block-text > .block-text__text {
+        margin-bottom: 48px;
+        @include adaptive-value('margin-bottom', 48, 17, 0);
+    }
+    &__block-text > .block-text__button-link {
+        margin-bottom: 140px;
+        @include adaptive-value('margin-bottom', 140, 49, 0);
+    }
+} 
+
+.image {
+    &__play {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        right: 21px;
+        bottom: 31%;
+        filter: drop-shadow(0px 10px 20px rgba(255, 148, 1, 0.15));
+        transform: matrix(1, -0.04, 0.04, 1, 0, 0);
+        @include adaptive-value('width', 80, 40, 0);
+        @include adaptive-value('height', 80, 40, 0);
+    }
+}
+
+.-text {
+    &__title-h3 {
+        
+    }
+    &__button-link {
+    }
+}
+
+.features {
+    position: relative;
+    &__container {
+    }
+    &__titile-h2{
+        margin-top: 62px;
+        @include adaptive-value('margin-top', 62, 30, 0);
+    }
+    &__block-text {
+    }
+    &__block-text > .block-text__title-h3 {
+        margin-top: 13px;
+        margin-bottom: 43px;
+        @include adaptive-value('margin-bottom', 43, 20, 0);
+    }
+    &__items {
+        display: flex;
+        max-width: 971px;
+        margin: 0 auto;
+        gap: 118px;
+        @include adaptive-value('gap', 118, 80, 0);
+    }
+    &__item {
+        flex: 0 1 33.333%;
+    }
+}
+
+.block-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__icon {
+        margin-bottom: 51px;
+        @include adaptive-value('margin-bottom', 51, 25, 0);
+    }
+    &__icon:last-child{
+        margin-bottom: 41px;
+        @include adaptive-value('margin-bottom', 41, 20, 0);
+    }
+    &__title {
+        font-family: Gilroy;
+        font-size: 24px;
+        line-height: 30px;
+        color: #2E2E2E;
+        margin-bottom: 19px;
+        @include adaptive-value('font-size', 24, 15, 0);
+        @include adaptive-value('line-height', 30, 20, 0);
+        @include adaptive-value('margin-bottom', 19, 12, 0);
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 28.8px;
+        @include adaptive-value('font-size', 18, 12, 0);
+        @include adaptive-value('line-height', 28.8, 18, 0);
+    }
+}
+
+.recipes {
+    background: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0) 100%);
+    position: relative;
+    &__container {
+    }
+    &__block-text {
+    }
+    &__title-h2{
+        margin-top: 62px;
+        margin-bottom: 13px;
+        @include adaptive-value('margin-top', 62, 32, 0);
+        @include adaptive-value('margin-bottom', 13, 8, 0);
+    }
+    &__title-h3 {
+        font-family: Gilroy_semibold;
+        font-size: 48px;
+        margin-bottom: 43px;
+        @include adaptive-value('font-size', 48, 24, 0);
+        @include adaptive-value('margin-bottom', 43, 20, 0);
+    }
+    &__items {
+        display: flex;
+        max-width: 1170px;
+        margin: 0 auto;
+        gap: 54px;
+        @include adaptive-value('gap', 54, 30, 0);
+    }
+    &__item {
+        flex: 0 1 33.333%;
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.block-card {
+    margin-bottom: 72px;
+    @include adaptive-value('margin-bottom', 72, 36, 0);
+    &__image {
+        margin-bottom: 10px;
+    }
+    &__text {
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        gap: 140px;
+        align-items: center;
+        margin-bottom: 20px;
+        @include adaptive-value('gap', 140, 80, 0);
+        @include adaptive-value('margin-bottom', 20, 12, 0);
+    }
+    &__name {
+        font-family: Circular Std;
+        font-size: 20px;
+        line-height: 60px;
+        @include adaptive-value('font-size', 20, 10, 0);
+        @include adaptive-value('line-height', 60, 25, 0);
+    }
+    &__rating {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+    &__subinfo {
+        display: flex;
+        justify-content: space-between;
+        gap: 175px;
+        align-items: center;
+        @include adaptive-value('gap', 175, 100, 0);
+    }
+    &__price {
+        font-family: Gilroy_bold_italic;
+        font-size: 18px;
+        color: #FF9401;
+        @include adaptive-value('font-size', 18, 12, 0);
+    }
+    &__button{
+        margin-bottom: 26px;
+        @include adaptive-value('margin-bottom', 26, 15, 0);
+    }
+}
+
+.rating {
+    &__icon{
+    }
+    &__number{
+        font-family: Gilroy_semibold;
+        font-size: 16px;
+        line-height: 60px;
+        color: #818181;
+    }
+}
+
+.button-cart {
+    padding: 0 14px 0 18px;
+    border-radius: 15px;
+    background: rgba(196, 196, 196, 0.26);
+    border: none;
+
+    font-family: Circular Std;
+    font-size: 10px;
+    color: #696969;
+}
+
+.app {
+    margin-top: 131px;
+    position: relative;
+    @include adaptive-value('margin-top', 131, 65, 0);
+    &__container {
+        display: flex;
+        gap: 111px;
+        @include adaptive-value('gap', 111, 50, 0);
+    }
+    &__media {
+        flex: 0 1 50%;
+    }
+    &__image {
+    }
+    &__content {
+        flex: 0 1 50%;
+    }
+    &__block-text {
+    }
+    &__title-h2 {
+        margin-bottom: 23px;
+        margin-top: 101px;
+        @include adaptive-value('margin-top', 101, 70, 0);
+        @include adaptive-value('margin-bottom', 23, 15, 0);
+    }
+    &__title-h3 {
+        font-size: 48px;
+        margin-bottom: 18px;
+        @include adaptive-value('font-size', 48, 30, 0);
+        @include adaptive-value('margin-bottom', 18, 12, 0);
+    }
+}
+
+.block-text {
+    &__app-link {
+        display: inline-block;
+        margin-bottom: 75px;
+        @include adaptive-value('margin-bottom', 75, 30, 0);
+    }
+}
+
+.app__content > .block-text__text {
+    margin-bottom: 47px;
+    @include adaptive-value('margin-bottom', 47, 23, 0);
+}
+
+.feedback {
+    margin-top: 137px;
+    background: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0) 100%);
+    margin-bottom: 171px;
+    @include adaptive-value('margin-top', 137, 65, 0);
+    @include adaptive-value('margin-bottom', 171, 85, 0);
+    &_text {
+        font-family: Circular std book italic;
+        margin-bottom: 45px;
+        @include adaptive-value('margin-bottom', 45, 25, 0);
+    }
+    &__container {
+        display: flex;
+        gap: 179px;
+        @include adaptive-value('gap', 179, 90, 0);
+    }
+    &__content {
+        flex: 0 1 50%;
+    }
+    &__block-text {
+    }
+    &__title-h2 {
+        margin-top: 53px;
+        margin-bottom: 23px;
+        @include adaptive-value('margin-top', 53, 25, 0);
+        @include adaptive-value('margin-bottom', 23, 12, 0);
+    }
+    &__title-h3 {
+        font-family: Gilroy;
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 30px;
+        @include adaptive-value('margin-bottom', 30, 15, 0);
+        @include adaptive-value('font-size', 48, 24, 0);
+        @include adaptive-value('line-height', 60, 30, 0);
+    }
+    &__slider {
+        display: flex;
+        justify-content: space-between;
+        gap: 148px;
+        @include adaptive-value('gap', 148, 75, 0);
+    }
+    &__author {
+        padding: 0 2px;
+    }
+    &__image {
+        flex: 0 1 50%;
+        padding-top: 30px;
+        @include adaptive-value('padding-top', 30, 15, 0);
+    }
+}
+
+.slider {
+    &__arrow {
+        display: flex;
+        align-items: center;
+        gap: 1px;
+        justify-content: center;
+    }
+}
+
+.arrow {
+    &__left {
+        width: 14px;
+        height: 14px;
+    }
+    &__right {
+        width: 31px;
+        height: 31px;
+        padding-top: 8px;
+    }
+}
+
+.footer {
+    background: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0) 100%);
+    position: relative;
+    &_link {
+        font-size: 16px;
+        line-height: 30px;
+        color: #6A5C5C;
+        @include adaptive-value('font-size', 16, 10, 0);
+        @include adaptive-value('line-height', 30, 15, 0);
+    }
+    &__link:hover{
+        color: #f70a0a;
+        transition: color 0.3s ease 0s;
+    }
+    &__container {
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        gap: 170px;
+        @include adaptive-value('gap', 170, 85, 0);
+    }
+    &__contacts {
+        margin-left: 44px;  
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        @include adaptive-value('margin-left', 44, 22, 0);
+        @include adaptive-value('gap', 22, 11, 0);
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 105px;
+        margin-bottom: 40px;
+        @include adaptive-value('gap', 105, 52, 0);
+        @include adaptive-value('margin-bottom', 40, 20, 0);
+    }
+    &__column {
+        flex: 0 1 25%;
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        flex-wrap: wrap;
+        @include adaptive-value('gap', 21, 11, 0);
+    }
+    &__title-h4 {
+        font-family: Gilroy_semibold;
+        font-size: 20px;
+        line-height: 30px;
+        @include adaptive-value('font-size', 20, 10, 0);
+        @include adaptive-value('line-height', 30, 15, 0);
+    }
+    &__copyright {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+.link-decoration{
+    text-decoration: underline;
+    font-family: Circular Std;
+    font-size: 16px;
+    line-height: 30px;
+    @include adaptive-value('font-size', 16, 8, 0);
+    @include adaptive-value('line-height', 30, 15, 0);
+}
+
+.contacts {
+    &__logo {
+    }
+    &__mail {
+        cursor: pointer;
+    }
+    &__web {
+        cursor: pointer;
+    }
+}
+
+.icon-mail{
+    color: #3F3232;
+    width: 19px;
+    height: 14px;
+    display: flex;
+    gap: 5px;
+}
+.icon-web{
+    color: #3F3232;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    gap: 5px;
+}
+.icon-heart{
+    width: 10px;
+    height: 8px;
+}
+.icon-mail:hover{
+    color: #f70a0a;
+    transition: color 0.3s ease 0s;
+    padding-right: 5px;
+    display: flex;
+    gap: 5px;
+}
+.icon-web:hover{
+    color: #f70a0a;
+    transition: color 0.3s ease 0s;
+}
+.logo {
+    &__img {
+    }
+}  
+
+.block-text {
+    &__center {
+    }
+}
+
+.absolute {
+    position: absolute;
+    &__image-1 {
+        top: 0;
+        right: 28%;
+        z-index: -2;
+        transform: rotate(180deg);
+    }
+    &__image-2 {
+        left: 0;
+        top: -19%;
+        transform: rotate(-26.39deg);
+        z-index: -2;
+    }
+    &__image-3 {
+        right: 0;
+        top: -19%;
+        z-index: -2;
+    }
+    &__image-4 {
+        z-index: -2;
+        right: 0;
+        top: -28%;
+    }
+    &__image-5 {
+        z-index: -2;
+        right: 0;
+        top: -58%;
+    }
+    &__image-6 {
+        top: 0;
+        left: 42%;
+        width: 251px;
+        height: 177px;
+        z-index: -2;
+    }
+    &__image-7 {
+        z-index: -2;
+        left: 0;
+        top: -28%;
+        transform: matrix(1.01, -0.13, -0.13, 0.99, -3, -49);
+    }
+
+    &__image-8 {
+        z-index: -2;
+        transform: rotate(-9deg);
+        bottom: -19%;
+        left: -2%;
+    }
+}
+
+
+@import 'media';
